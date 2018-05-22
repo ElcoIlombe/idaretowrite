@@ -7,6 +7,53 @@
 /*
   Or add your statements here:
  */
-body{
+#home, #home .container-fluid, #home .container-fluid> .row{
+  height: 100%;
+}
+#home {
+  position: relative;
+}
+.left{
+  background-color: #fcfdff;
+}
 
+#home img {
+  border-radius: 100%;
+  position: absolute;
+  top: -30%;
+  left: 0;
+}
+
+#home .p {
+  padding-top: 60%;
+}
+
+.header{ height: 10%; }
+
+#home {
+  height: 90%;
+}
+
+.navbar {
+  z-index: 999;
+  background-color: white;
+}
+.mobile-prensentation {
+  display: none;
+}
+@media screen and (max-width: 812px){
+  #home img {
+    position: relative;
+    margin: 25px;
+    left: 0;
+  }
+  #home .p {
+    padding: 15px 0;
+  }
+  .desktop-prensentation{
+    display: none;
+  }
+  .mobile-prensentation{
+    display: inline;
+  }
 }
