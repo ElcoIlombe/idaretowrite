@@ -89,6 +89,28 @@
   color: white;
   padding-top: 15px;
 }
+
+/* home page right side */
+
+.right {
+  display: table;
+  height: 100%;
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527114050/IdareToWrite/couverture.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: green;
+}
+.right .row {
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+
+}
+.right .cta-text {
+  background: rgba(0,0,0,0.8);
+  color: white;
+  width: 100%;
+}
 /* MOBILE */
 @media screen and (max-width: 812px){
   #home img {
