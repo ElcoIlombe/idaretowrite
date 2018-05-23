@@ -5,18 +5,31 @@
 
 
 /*
-  Or add your statements here:
+  GENERAL
  */
+
+.navbar {
+  z-index: 999;
+  background-color: white;
+}
+.header{ height: 10%; }
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/*Home Page*/
+
 #home, #home .container-fluid, #home .container-fluid> .row{
   height: 100%;
 }
 #home {
   position: relative;
+  height: 90%;
 }
-.left{
-  background-color: #fcfdff;
-}
-
 #home img {
   border-radius: 100%;
   position: absolute;
@@ -28,19 +41,55 @@
   padding-top: 60%;
 }
 
-.header{ height: 10%; }
+/*Home Page Left Side*/
 
-#home {
-  height: 90%;
+.left{
+  background-color: #eff2f7;
 }
 
-.navbar {
-  z-index: 999;
-  background-color: white;
-}
 .mobile-prensentation {
   display: none;
 }
+
+.snap {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527107145/IdareToWrite/snap_bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 50px 0;
+}
+.snap .fa-snapchat-square{
+  font-size: 1.5em;
+  color: #FFFC00;
+}
+.wattpad {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527107138/IdareToWrite/wattpad_bg.jpg") no-repeat;
+  background-size: cover;
+  padding: 70px 0;
+}
+
+.wattpad .wattpad-icone {
+  margin: 5px;
+  padding: 0px 5px;
+  font-style: initial;
+  background: #f7981b!important;
+  border-radius: 10px;
+}
+
+.form-newsletter
+{
+  color: white;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.form-newsletter form input
+{
+  margin-top: 5px;
+}
+
+.news {
+  color: white;
+  padding-top: 15px;
+}
+/* MOBILE */
 @media screen and (max-width: 812px){
   #home img {
     position: relative;
@@ -55,5 +104,11 @@
   }
   .mobile-prensentation{
     display: inline;
+  }
+  .wattpad {
+    background-position: center;
+  }
+  .wattpad, .snap {
+    padding: 50px;
   }
 }
