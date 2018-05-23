@@ -11,6 +11,10 @@
 .navbar {
   z-index: 999;
   background-color: white;
+
+}
+.logo h1{
+  font-size: 1.5em;
 }
 .header{ height: 10%; }
 
@@ -28,7 +32,7 @@
 }
 #home {
   position: relative;
-  height: 90%;
+  height: 91%;
 }
 #home img {
   border-radius: 100%;
@@ -95,7 +99,7 @@
 .right {
   display: table;
   height: 100%;
-  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527114050/IdareToWrite/couverture.jpg") no-repeat;
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527115524/IdareToWrite/woman-2486528_1280.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   color: green;
@@ -113,6 +117,12 @@
 }
 /* MOBILE */
 @media screen and (max-width: 812px){
+  #home, #home .container-fluid, #home .container-fluid> .row{
+  height: auto;
+  }
+  .right {
+    padding: 200px 0;
+  }
   #home img {
     position: relative;
     margin: 25px;
