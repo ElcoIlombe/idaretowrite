@@ -9,12 +9,16 @@
  */
 
 .navbar {
-  z-index: ;
+  z-index: 998;
   background-color: white;
+  -webkit-box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.78);
+-moz-box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.78);
+box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.78);
 
 }
 .logo h1{
   font-size: 1.5em;
+  z-index: 997;
 }
 .header{ height: 10%; }
 
@@ -25,20 +29,21 @@
   color: white;
 }
 
-/*Home Page*/
+/* HOME PAGE*/
 
-/*#home, #home .container-fluid, #home .container-fluid> .row{
+#home, #home .container-fluid, #home .container-fluid> .row{
   height: 100%;
-}*/
+}
 #home {
   position: relative;
-  /*height: 91%;*/
+  height: 100%;
 }
 #home img {
   border-radius: 100%;
   position: absolute;
   top: -30%;
   left: 0;
+  z-index: 950ft;
 }
 
 #home .p {
@@ -108,15 +113,49 @@
   display: table-cell;
   vertical-align: middle;
   height: 100%;
-
 }
 .right .cta-text {
   background: rgba(0,0,0,0.8);
   color: white;
   width: 100%;
 }
+
+/* NEWS PAGE */
+#actus, #actus .container, #actus .container> .row{
+  height: 100%;
+}
+#actus {
+  position: relative;
+  height: 100%;
+}
+
+.inspirations, .updates, .life {
+  padding: 150px 0;
+  border: 1px solid lightgray;
+}
+.inspirations, .updates{
+  margin: 5px 0;
+}
+.inspirations {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527124423/IdareToWrite/23232122_2025200347702165_782457991_n.jpg") no-repeat;
+  background-size: cover;
+}
+.updates {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527124402/IdareToWrite/23365120_2025191287703071_874076290_n.jpg") no-repeat;
+  background-size: cover;
+}
+.life {
+  background: url("https://res.cloudinary.com/elcoilombe/image/upload/v1527124442/IdareToWrite/23315918_2025201614368705_1003722545_n.jpg") no-repeat;
+  background-size: cover;
+}
+#actus .actus-right .overlay {
+  background: rgba(247, 152, 27, 0.8);
+}
 /* MOBILE */
 @media screen and (max-width: 812px){
+  .no-mobile {
+    display: none!important;
+  }
   #home, #home .container-fluid, #home .container-fluid> .row{
   height: auto;
   }
