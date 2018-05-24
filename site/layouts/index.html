@@ -2,51 +2,8 @@
 <section id="home">
   <div class="container-fluid">
   <div class="row">
-    <div class="col-md-12 col-lg-6 left">
-      <div class="row d-flex align-items-center text-center">
-        <div class="mobile-prensentation col-md-12 col-sm-12 col-xs-12 col-lg-4 bg-warning">
-          <div class="row align-items-center">
-            <div class="col-md-5"><img src="https://res.cloudinary.com/elcoilombe/image/upload/v1526951982/avatar_presentation.jpg" class="img-fluid img-thumbnail" alt="Avatar IDareToWrite"></div>
-            <div class="col-md-7">
-              <p class="p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere a, atque earum, temporibus assumenda. Doloribus quisquam nulla totam doloremque necessitatibus molestiae, enim error consequuntur reprehenderit beatae, sapiente vitae, natus! </p>
-            </div>
-          </div>
-        </div>
-        <div class="desktop-prensentation col-md-12 col-sm-12 col-xs-12 col-lg-4 bg-warning">
-          <img src="https://res.cloudinary.com/elcoilombe/image/upload/v1526951982/avatar_presentation.jpg" class="img-fluid img-thumbnail" alt="Avatar IDareToWrite">
-          <p class="p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem facere a, atque earum, temporibus assumenda. Doloribus quisquam nulla totam doloremque necessitatibus molestiae, enim error consequuntur reprehenderit beatae, sapiente vitae, natus! </p>
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 snap">
-            <div class="overlay">
-              <h2>Rejoins moi sur Snap
-              <i class="fa fa-snapchat-square"></i></h2>
-            </div>
-
-        </div>
-        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 wattpad">
-          <div class="overlay">
-            <h2> Suis aussi mes histoire sur WattPad <i class="wattpad-icone bg-warning">W</i></h2>
-          </div>
-
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-4 bg-primary form-newsletter">
-          <p>Envie d'etre au courant des dernières actus ? Inscrit toi à ma newsletter</p>
-        <form action="" method="">
-          <input type="text" name="nom" placeholder="nom et prenom">
-          <input type="text" name="email" placeholder="email">
-          <br><br>
-          <input type="submit"  value="Envoyer" class="btn btn-secondary">
-        </form>
-        </div>
-        <div class="col-md-6 offset-md-1 news bg-success ">
-          <h2> Dernières Actualités</h2>
-          <hr>
-          <h6> Le 15/05/2018 - La vie d'autheur : </h6>
-          <p> [Etre auteur WattPad au quotidien c'est... <a href="#">Lire la suite</a></p>
-        </div>
-      </div>
+    <div class="col-md-12 col-lg-6 left text-center">
+      {{ partial "home-left.html" .}}
     </div>
     <div class="col-md-12 col-lg-6 right text-center">
       <div class="row">
@@ -58,7 +15,6 @@
           <a href="#" class="btn btn-primary"> Lire sur mon site </a>
         </div>
       </div>
-
     </div>
   </div>
 </div>
