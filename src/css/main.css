@@ -151,6 +151,31 @@ box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.78);
 #actus .actus-right .overlay {
   background: rgba(247, 152, 27, 0.8);
 }
+
+/* Article Pages */
+
+.left-actus{
+  background-color: #eff2f7;
+}
+.articles-text {
+  background: white!important;
+}
+
+/* Article Single */
+
+.article-single {
+  overflow-y: scroll;
+}
+
+/* BOOK*/
+
+.book-resume {
+margin-top: 50px;
+padding: 0;
+}
+.left-book {
+  background-color: #eff2f7;
+}
 /* MOBILE */
 @media screen and (max-width: 812px){
   .no-mobile {
@@ -181,5 +206,11 @@ box-shadow: -1px 4px 20px -4px rgba(0,0,0,0.78);
   }
   .wattpad, .snap {
     padding: 50px;
+  }
+  .article-single {
+  overflow-y: hidden;
+}
+  .m-5 , .m-2 {
+    margin: 0!important;
   }
 }

@@ -1,0 +1,21 @@
+      <div class="row text-left m-5">
+        <div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+            <h2>{{ .Title}}</h2>
+        </div>
+        {{ range .Data.Pages }}
+        <div class="row m-2">
+          <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4">
+          <img src="https://res.cloudinary.com/elcoilombe/image/upload/v1527161204/IdareToWrite/23414156_2025200377702162_1471768977_n.jpg" alt=" Happy Birthday Image " class="img-fluid img-thumbnails">
+          </div>
+          <div class="col-md-8 col-sm-12 col-xs-12 col-lg-8 articles-text">
+
+          <h4> {{ .Title }}</h4>
+          <hr>
+           <div class="truncate">
+             {{ .Content }}
+           </div>
+           <a href="{{ .Permalink }}" class="btn btn-primary m-2"> Lire la suite</a>
+          </div>
+        </div>
+        {{ end }}
+      </div>

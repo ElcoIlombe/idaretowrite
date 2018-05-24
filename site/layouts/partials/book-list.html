@@ -1,0 +1,13 @@
+<div class="container">
+        <div class="row d-flex align-items-center text-center p-2">
+          {{ range (where .Site.Pages "Type" "books") }}
+          {{ if not (eq .Title "Index") }}
+          <div class="col-md-4 col-sm-12 col-xs-12 col-lg-4">
+              <p><img src="{{ .Params.imgUrl }}" class="img-fluid" width="207px" height="311px" ></p>
+              <p><a href="{{ .Params.wattpadUrl }}" class="btn btn-warning">Lire sur WattPad</a></p>
+              <p><a href=" {{ .Permalink }}" class="btn btn-primary"> Lire le résumé</a></p>
+          </div>
+          {{end}}
+          {{ end }}
+        </div>
+</div>

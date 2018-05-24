@@ -1,0 +1,17 @@
+{{ define "main" }}
+  <section id="actus">
+  <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-12 col-lg-6 left no-mobile">
+      {{ partial "home-left.html" .}}
+    </div>
+    <div class="col-md-12 col-lg-6 text-center actus-right">
+      <div class="container">
+        {{ partial "actus-right.html" . }}
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+{{ end }}
