@@ -1,3 +1,4 @@
+{{ $pageType := "page" }}
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   <head>
@@ -26,6 +27,5 @@
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}
 
     <script src="app.js"></script>
-
   </body>
 </html>
