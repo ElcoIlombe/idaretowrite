@@ -7,7 +7,10 @@
 /*
   GENERAL
  */
-
+body {
+  overflow-y: scroll;
+  z-index: 999;
+}
 .navbar {
 z-index: 998;
  background-color: white;
