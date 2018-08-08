@@ -1,0 +1,80 @@
+<div class="row d-flex align-items-center text-center">
+        <div class="mobile-prensentation col-md-12 col-sm-12 col-xs-12 col-lg-4 bg-warning">
+          <div class="row align-items-center">
+            <div class="col-md-5"><img src="https://res.cloudinary.com/elcoilombe/image/upload/v1526951982/avatar_presentation.jpg" class="img-fluid img-thumbnail" alt="Avatar IDareToWrite"></div>
+            <div class="col-md-7">
+              <p class="p"> |ᴆ₳ʀ؏ Ϯṍ ϣƦɨϮᶓ ﻬ .
+• Aime comme tu l'entends •
+
+Hi ! ﻬ
+
+~ J'adore lire (of course), notamment les histoires dans les thèmes Heroic Fantasy, Réalisme et Historique.
+~ La meilleure lecture de ma vie ? KUSHIEL, de Jacqueline Carey.
+~Je hais les fautes de d'orthographe, viscéralement.
+~J'aime les anti-héros et personnages aux personnalités fortes et compliquées.
+
+Vous pouvez également m'envoyer vos fictions si vous souhaitez avoir des avis constructifs !
+
+Bonne lecture !
+|ᴆ₳ʀ؏ Ϯṍ ϣƦɨϮᶓ ﻬ
+(Abonne-toi...si tu oses.)
+Profondément et tendrement bien logée dans un pot de nutella</p>
+            </div>
+          </div>
+        </div>
+        <div class="desktop-prensentation col-md-12 col-sm-12 col-xs-12 col-lg-4 bg-warning">
+          <img src="https://res.cloudinary.com/elcoilombe/image/upload/v1526951982/avatar_presentation.jpg" class="img-fluid img-thumbnail" alt="Avatar IDareToWrite">
+          <br><br>
+          <p style="font-size: 11px;
+          "> |ᴆ₳ʀ؏ Ϯṍ ϣƦɨϮᶓ ﻬ .
+• Aime comme tu l'entends •
+
+Hi ! ﻬ
+
+~ J'adore lire (of course), notamment les histoires dans les thèmes Heroic Fantasy, Réalisme et Historique.
+~ La meilleure lecture de ma vie ? KUSHIEL, de Jacqueline Carey.
+~Je hais les fautes de d'orthographe, viscéralement.
+~J'aime les anti-héros et personnages aux personnalités fortes et compliquées.
+
+Vous pouvez également m'envoyer vos fictions si vous souhaitez avoir des avis constructifs !
+
+Bonne lecture !
+|ᴆ₳ʀ؏ Ϯṍ ϣƦɨϮᶓ ﻬ
+(Abonne-toi...si tu oses.)
+Profondément et tendrement bien logée dans un pot de nutella. </p>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 snap">
+            <div class="overlay">
+              <h2>Rejoins moi sur Snap
+              <i class="fa fa-snapchat-square"></i></h2>
+            </div>
+
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-6 col-lg-4 wattpad">
+          <div class="overlay">
+            <h2><a href="https://www.wattpad.com/user/IDareToWrite">Suis aussi mes histoires sur WattPad <i class="wattpad-icone bg-warning">W</i></a></h2>
+          </div>
+
+        </div>
+      </div>
+      <div class="row">
+        <!-- <div class="col-md-4 bg-primary form-newsletter">
+          <p>Envie d'etre au courant des dernières actus ? Inscrit toi à ma newsletter</p>
+        <form action="" method="">
+          <input type="text" name="nom" placeholder="nom et prenom">
+          <input type="text" name="email" placeholder="email">
+          <br><br>
+          <input type="submit"  value="Envoyer" class="btn btn-secondary">
+        </form>
+        </div> -->
+        <div class="col-md-6 news bg-success ">
+          <h2> Dernières Actualités</h2>
+          <hr>
+          {{ range first 3 .Site.Pages }}
+          {{ if not (eq .Title "Index") }}
+          <h6> {{ .Date.Format "Monday, January 2, 2006"}}  </h6>
+          <p> {{ .Title }} <a href="{{ .Permalink}}">Lire l'article</a></p>
+          {{ end }}
+          {{ end }}
+        </div>
+      </div>
