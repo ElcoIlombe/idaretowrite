@@ -40,6 +40,7 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "life"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image URL", name: "articleUrl", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
   - name: "updates" # Used in routes, e.g., /admin/collections/blog
     label: "Updates" # Used in the UI
@@ -50,4 +51,5 @@ collections:
       - {label: "Layout", name: "layout", widget: "hidden", default: "updates"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image URL", name: "articleUrl", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
